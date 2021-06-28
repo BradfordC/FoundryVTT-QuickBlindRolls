@@ -1,7 +1,7 @@
 import { LOG, modName } from "./scripts/utils.js";
 
 Hooks.on("ready", function() {
-    LOG.debug(ChatMessage.getWhisperRecipients("GM"));
+    LOG.debug(game.system.template.Actor.character);
 });
 
 Hooks.on("preCreateChatMessage", function(roll, data, options) {
@@ -10,6 +10,7 @@ Hooks.on("preCreateChatMessage", function(roll, data, options) {
     if(data.type === 5) {
         data.blind = true;
         data.whisper = ChatMessage.getWhisperRecipients("GM").map(u => u.id);
+        data.flavor = "(Quick Blinded)" + (data.flavor ? "<br>" + data.flavor : "");
         roll.data.update(data);
     }
 });
