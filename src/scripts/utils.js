@@ -1,6 +1,10 @@
 export const modName = "quick-blind-rolls";
 export const modTitle = "QuickBlindRolls";
 
+export function gmID() {
+    return game.users.find(user => user.isGM && user.active).id;
+}
+
 export class LOG {
     static log(...args) {
         args = [modTitle, "|"].concat(args);

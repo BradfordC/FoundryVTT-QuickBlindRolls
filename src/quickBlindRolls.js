@@ -1,10 +1,13 @@
-import { LOG, modName } from "./scripts/utils.js";
+import { LOG, modName, gmID } from "./scripts/utils.js";
 
-Hooks.on("ready", function() {
-    LOG.log("Log");
-    LOG.warn("Warn");
-    LOG.error("Error");
-    LOG.debug("Debug");
+Hooks.on("preCreateChatMessage", function(roll, data, options) {
+    LOG.debug(roll.data, data);
+    // Roll-type chat messages
+    if(data.type === 5) {
+        data.blind = true;
+        data.whisper = [gmID()];
+        roll.data.update(data);
+    }
 });
 
 Hooks.once('devModeReady', ({registerPackageDebugFlag}) => {
