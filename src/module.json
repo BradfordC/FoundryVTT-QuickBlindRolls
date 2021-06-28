@@ -1,0 +1,20 @@
+{
+	"name": "quick-blind-rolls",
+	"title": "Quick Blind Rolls",
+	"description": "Provides tools to make it quicker to roll certain rolls blindly.",
+	"version": "1.0.0",
+	"author": "iceman76",
+	"minimumCoreVersion": "0.8.8",
+	"compatibleCoreVersion": "0.8.8",
+	"esmodules": [
+		"quickBlindRolls.js"
+	],
+	"allowBugReporter": true,
+	"url": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls",
+	"manifest": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/releases/latest/download/module.json",
+	"download": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/releases/latest/download/module.zip",
+	"license": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/blob/master/LICENSE",
+	"readme": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/blob/master/README.md",
+	"bugs": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/issues",
+	"changelog": "https://https://github.com/BradfordC/FoundryVTT-QuickBlindRolls/blob/master/CHANGELOG.md"
+}
