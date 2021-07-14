@@ -1,3 +1,3 @@
-# 1.0.0
+# 0.1.0
 
-* Initial release
+* Beta Release (Package Jam Deadline AAAAAAAAAA)

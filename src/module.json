@@ -2,7 +2,7 @@
 	"name": "quick-blind-rolls",
 	"title": "Quick Blind Rolls",
 	"description": "Provides tools to make it quicker to roll certain rolls blindly.",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"author": "iceman76",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "0.8.8",
